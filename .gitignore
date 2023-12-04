@@ -1,3 +1,8 @@
 nimcache/
 nimblecache/
 htmldocs/
+
+cookies.txt
+
+**/input.txt
+**/*.exe
