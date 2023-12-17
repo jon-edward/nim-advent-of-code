@@ -112,7 +112,7 @@ proc solution2(): int =
         for entry in mapping:
             if value >= entry.source and value < (entry.source + entry.width):
                 return value - entry.source + entry.destination 
-        raise Defect()
+        return value
 
     let seedToSoil = createMapping("seed-to-soil")
     let soilToFertilizer = createMapping("soil-to-fertilizer")
