@@ -87,4 +87,4 @@ echo "*** Day 1 ***"
 echo fmt"Solution 1: {solution1()}"
 echo fmt"Solution 2: {solution2()}"
 
-echo fmt"Time taken: {cpuTime() - startTime:.3f}"
+echo fmt"Time taken: {cpuTime() - startTime:.3f}s"
