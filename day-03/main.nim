@@ -185,7 +185,7 @@ proc solution2(): int =
 
 let startTime = cpuTime()
 
-echo "*** Day 2 ***"
+echo "*** Day 3 ***"
 echo fmt"Solution 1: {solution1()}"
 echo fmt"Solution 2: {solution2()}"
 
