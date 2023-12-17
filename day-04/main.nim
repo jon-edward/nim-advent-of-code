@@ -10,12 +10,12 @@ const input: seq[string] = readFile("input.txt").splitLines()
 
 
 proc parseCardLine(line: string): tuple[winningNumbers: HashSet[string], testNumbers: HashSet[string]] =
-        let lineMatch = line.match(re"Card\s+\d+:\s*((?:\s*\d+)+)\s+\|\s+((?:\s*\d+)+)").get
+    let lineMatch = line.match(re"Card\s+\d+:\s*((?:\s*\d+)+)\s+\|\s+((?:\s*\d+)+)").get
         
-        let winningNumbers = lineMatch.captures[0].split(re"\s+").toHashSet
-        let testNumbers = lineMatch.captures[1].split(re"\s+").toHashSet
+    let winningNumbers = lineMatch.captures[0].split(re"\s+").toHashSet
+    let testNumbers = lineMatch.captures[1].split(re"\s+").toHashSet
         
-        return (winningNumbers: winningNumbers, testNumbers: testNumbers)
+    return (winningNumbers: winningNumbers, testNumbers: testNumbers)
 
 
 proc solution1(): int =
