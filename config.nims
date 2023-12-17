@@ -1,0 +1,3 @@
+--define:release
+--run
+--opt:size
